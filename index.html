@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sandesh Rao's Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="container">
+        <a class="logo" href="#">Portfolio</a>
+
+        <img
+          id="mobile-cta"
+          class="mobile-menu"
+          src="images/menu.svg"
+          alt="mobile menu"
+        />
+
+        <nav>
+          <img
+            id="mobile-exit"
+            class="mobile-menu-exit-"
+            src="images/exit.svg"
+            alt="exit button"
+          />
+
+          <ul class="primary-nav">
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#interests">Interests</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+
+          <ul class="secondary-nav">
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="container">
+        <div class="left-col">
+          <p class="name"><h1>Sandesh Rao Udupi</h1></p>
+          <p class="designation"><h2>Mechanical Engineer</h2></p>
+        </div>
+
+        <img class="headshot" src="images/dp.jpg" alt="My headshot">
+        
+      </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h3>Skills</h3>
+            <ul class="skills">
+                <li>Fusion 360</li>
+                <li>CATIA V5</li>
+                <li>Python Programming</li>
+                <li>HTML5, CSS3</li>
+                <li>MATLAB</li>
+                <li>ANSYS</li>
+            </ul>
+
+            <img src="images/holding-phone.jpg" alt="skill">
+        </div>
+    </section>
+
+    <section id="interests" class="Interests-section">
+        <div class="container">
+            <h3>Interests</h3>
+            <ul class="interests">
+                <li>Mechanical Design</li>
+                <li>CAD/CAM/CAE</li>
+                <li>AI/ML</li>
+                <li>Web Development</li>            
+            </ul>
+
+            <img src="images/holding-phone.jpg" alt="interest">
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h3>Projects Undertaken</h3>
+            <ul class="projects">
+                <li>Image classification using DL</li>
+                <li>Arduino projects</li>
+                <li>ML Projects</li>
+                <li>Web Development Projects</li>            
+            </ul>
+
+            <img src="images/holding-phone.jpg" alt="projetcs">
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h3>Contact me at:</h3>
+            <a href="https://www.instagram.com/sandesh_r.u/"><img src="images/029-instagram.svg" alt="insta"></a>
+            <a href="https://www.linkedin.com/in/sandesh-rao-0b9714208/"><img src="images/027-linkedin.svg" alt="linkdin"></a>
+            <a href="https://github.com/Sundays32"><img src="images/github.svg" alt="github"></a>
+            <a href="https://twitter.com/Boring_Sundays"><img src="images/008-twitter.svg" alt="twitter"></a>
+
+        </div>
+
+        <div class="location">
+            <h3>Address</h3>
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124440.39881927885!2d74.7820230583424!3d12.922982868390962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35a4c37bf488f%3A0x827bbc7a74fcfe64!2sMangalore%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1626792573280!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+    </section>
+    <script>
+        const mobileBtn = document.getElementById("mobile-cta");
+        nav = document.querySelector("nav");
+        mobileBtnExit = document.getElementById("mobile-exit");
+        mobileBtn.addEventListener("click", () => {
+          nav.classList.add("menu-btn");
+        });
+  
+        mobileBtnExit.addEventListener("click", () => {
+          nav.classList.remove("menu-btn");
+        });
+        
+      </script>
+
+
+  </body>
+</html>
